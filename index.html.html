@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean & Brew Coffee Shop</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f1e7;
+            color: #3e2723;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #3e2723;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: #fff;
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #d7a86e;
+        }
+
+        /* Home */
+        .home {
+            height: 500px;
+            background-color: #6f4e37;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .home h2 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .home p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background-color: #d7a86e;
+            color: #3e2723;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: white;
+        }
+
+        /* Menu */
+        .menu {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .menu h2 {
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .coffee-card {
+            background-color: white;
+            width: 250px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .coffee-card .icon {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .coffee-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .coffee-card p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 20px;
+            color: #6f4e37;
+        }
+
+        /* About */
+        .about {
+            background-color: #ead7c0;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            margin: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h1>☕ Bean & Brew</h1>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div>
+            <h2>Fresh Coffee, Happy Moments ☕</h2>
+            <p>Enjoy freshly brewed coffee in a cozy atmosphere.</p>
+            <a href="#menu" class="btn">View Our Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu" id="menu">
+        <h2>Our Coffee Menu</h2>
+
+        <div class="menu-container">
+
+            <div class="coffee-card">
+                <div class="icon">☕</div>
+                <h3>Espresso</h3>
+                <p>Strong and rich classic coffee.</p>
+                <div class="price">₹120</div>
+            </div>
+
+            <div class="coffee-card">
+                <div class="icon">🥛</div>
+                <h3>Cappuccino</h3>
+                <p>Perfect coffee with creamy foam.</p>
+                <div class="price">₹150</div>
+            </div>
+
+            <div class="coffee-card">
+                <div class="icon">🍫</div>
+                <h3>Mocha</h3>
+                <p>Chocolate blended with delicious coffee.</p>
+                <div class="price">₹180</div>
+            </div>
+
+            <div class="coffee-card">
+                <div class="icon">🧊</div>
+                <h3>Cold Coffee</h3>
+                <p>Refreshing chilled coffee.</p>
+                <div class="price">₹160</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+
+        <p>
+            Welcome to Bean & Brew Coffee Shop!
+            We serve freshly brewed coffee made from carefully selected
+            coffee beans. Our goal is to provide delicious coffee,
+            a relaxing environment, and happy moments for everyone.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <p>📍 123 Coffee Street, Bengaluru</p>
+        <p>📞 +91 98765 43210</p>
+        <p>📧 beanandbrew@gmail.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Bean & Brew Coffee Shop | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
